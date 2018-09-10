@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 const api = "https://wallet.intucoin.com/apidocs/swagger.json";
-const nodefetch = require("node-fetch");
+const snekfetch = require("snekfetch");
 
 module.exports.run = async (bot, message, args) => {
-    nodefetch.get(api).then(r => console.log(r));
+    snekfetch.get(api).then(r => console.log(r));
 }
 
 module.exports.help = {
