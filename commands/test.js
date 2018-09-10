@@ -7,7 +7,6 @@ module.exports.run = async (bot, message, args) => {
         let body = r.body;
         let id = args[0];
         if(!id) return;
-        if(isNan(id)) return;
         
         let entry = body.find(post => post.id === id);
         console.log(entry);
