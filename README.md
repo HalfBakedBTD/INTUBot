@@ -1,1 +1,2 @@
-# INTUBot
+# AdBotNew
+This is AdBot updated style!
