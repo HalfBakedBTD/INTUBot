@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         let id = args[0];
         if(!id) return;
         
-        let entry = body.find(post => post.id === id);
+        let entry = body.filter(post => post.id === id);
         console.log(entry);
     });
 }
